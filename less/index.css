@@ -1,0 +1,273 @@
+#nav {
+  background-color: #fff;
+}
+#nav .navbar-header {
+  height: 80px;
+}
+#nav .navbar-header .navbar-toggle {
+  margin-top: 23px;
+}
+#nav .navbar-nav li a {
+  font-size: 16px;
+  color: #777;
+  line-height: 50px;
+}
+#nav .navbar-nav li a:hover {
+  color: skyblue;
+}
+#nav .navbar-nav li.active a {
+  background-color: #fff;
+  color: skyblue;
+  position: relative;
+}
+@media (max-width: 768px) {
+  #nav .navbar-nav li.active a::after {
+    display: none;
+  }
+}
+#nav .navbar-nav li.active::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: skyblue;
+  left: 15px;
+  top: 55px;
+}
+#slide {
+  margin-top: 80px;
+}
+#slide .item .large {
+  width: 100%;
+  height: 540px;
+  background-position: center center;
+}
+#grade {
+  text-align: center;
+}
+#grade h2 {
+  position: relative;
+}
+#grade h2::after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  background-color: skyblue;
+  left: 50%;
+  margin-left: -40px;
+  top: 50px;
+}
+#grade > p {
+  margin: 50px 0;
+}
+#grade .container .row div strong {
+  font-size: 36px;
+  color: #0ba1e4;
+  margin-bottom: 10px;
+}
+#advantage {
+  text-align: center;
+  background-color: #e1e1e1;
+}
+#advantage h2 {
+  padding-top: 20px;
+  position: relative;
+}
+#advantage h2::after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  background-color: skyblue;
+  left: 50%;
+  margin-left: -40px;
+  top: 70px;
+}
+#advantage > p {
+  margin: 50px 0;
+}
+#advantage .container .row div .adtg-box {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #e1e1e1;
+}
+#advantage .container .row div .adtg-box:hover {
+  background-color: #0ba1e4;
+}
+#advantage .container .row div .adtg-box:hover h3,
+#advantage .container .row div .adtg-box:hover p,
+#advantage .container .row div .adtg-box:hover span {
+  color: #fff;
+}
+#advantage .container .row div .adtg-box span {
+  font-size: 80px;
+  color: #0ba1e4;
+  margin-top: 20px;
+}
+#advantage .container .row div .adtg-box p {
+  margin-left: 10px;
+  line-height: 20px;
+  text-align: left;
+}
+#serve {
+  text-align: center;
+  background-color: #fff;
+}
+#serve h2 {
+  padding-top: 20px;
+  position: relative;
+}
+#serve h2::after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  background-color: skyblue;
+  left: 50%;
+  margin-left: -40px;
+  top: 70px;
+}
+#serve > p {
+  margin: 50px 0;
+}
+#serve .container .row div {
+  perspective: 800px;
+}
+#serve .container .row div .serve-box {
+  transition: all .5s;
+  border: 1px solid #ccc;
+  background-color: #fafafa;
+}
+#serve .container .row div .serve-box .top {
+  border-bottom: 1px solid #ccc;
+  padding: 20px 0;
+}
+#serve .container .row div .serve-box .top h4 {
+  color: #0ba1e4;
+}
+#serve .container .row div .serve-box .bottom p {
+  margin-top: 30px;
+}
+#serve .container .row div .serve-box .bottom .btn {
+  background-color: #fafafa;
+  color: #0ba1e4;
+  margin: 20px 0;
+}
+#serve .container .row div .serve-box:hover {
+  background-color: #0ba1e4;
+  transform: scale(1.2);
+  z-index: 100;
+}
+#serve .container .row div .serve-box:hover h4,
+#serve .container .row div .serve-box:hover p,
+#serve .container .row div .serve-box:hover .btn {
+  color: #fff;
+}
+#serve .container .row div .serve-box:hover .btn {
+  background-color: #0ba1e4;
+}
+@media (max-width: 768px) {
+  #serve .container .row div .serve-box:hover {
+    transform: scale(1);
+  }
+}
+#serve > .btn {
+  font-size: 20px;
+  color: #0ba1e4;
+  border-color: #0ba1e4;
+  margin: 60px 0;
+}
+#serve > .btn:hover {
+  background-color: #0ba1e4;
+  color: #fff;
+}
+#hearten {
+  text-align: center;
+  background-color: #fff;
+}
+#hearten h2 {
+  padding-top: 20px;
+  position: relative;
+}
+#hearten h2::after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  background-color: skyblue;
+  left: 50%;
+  margin-left: -40px;
+  top: 70px;
+}
+#hearten > p {
+  margin: 50px 0;
+}
+#hearten .container .row div .hearten-box {
+  border: 1px solid #34a263;
+  position: relative;
+  text-align: left;
+  padding: 35px 20px 20px 10px;
+}
+#hearten .container .row div .hearten-box img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  margin-left: -25px;
+}
+#hearten .container .row div .hearten-box::after {
+  content: '';
+  position: absolute;
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  border-right: 1px solid #34a263;
+  border-bottom: 1px solid #34a263;
+  background-color: #fff;
+  transform: rotate(45deg);
+  bottom: -11px;
+  right: 50%;
+  margin-right: -11px;
+}
+#hearten .container .row div i {
+  display: block;
+  width: 70px;
+  height: 70px;
+  background: url(../images/icon.svg);
+  margin: 30px auto 40px;
+}
+#symbiosis {
+  text-align: center;
+  background-color: #e1e1e1;
+}
+#symbiosis h2 {
+  padding-top: 20px;
+  position: relative;
+}
+#symbiosis h2::after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  background-color: skyblue;
+  left: 50%;
+  margin-left: -40px;
+  top: 70px;
+}
+#symbiosis > p {
+  margin: 50px 0;
+}
+#symbiosis .container .row div {
+  margin-top: 20px;
+}
+#symbiosis .container .row div img {
+  width: 100%;
+  border: 1px solid #ccc;
+}
+#symbiosis .container .row div img:hover {
+  background-color: #fff;
+  transition: all 1s;
+}

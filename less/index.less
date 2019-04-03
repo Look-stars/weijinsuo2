@@ -1,0 +1,390 @@
+#nav {
+  background-color: #fff;
+ 
+  .navbar-header {
+    height: 80px;
+
+    //  缩小时的按钮
+    .navbar-toggle {
+      margin-top: 23px;
+    }
+
+    //  logo
+
+  }
+
+  .navbar-nav {
+    li {
+
+      a {
+        font-size: 16px;
+        color: #777;
+        line-height: 50px;
+
+        &:hover {
+          color: skyblue;
+        }
+
+      }
+
+      &.active {
+        a {
+          background-color: #fff;
+          color: skyblue;
+          position: relative;
+
+          @media(max-width: 768px) {
+            &::after {
+              display: none;
+            }
+          }
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          width: 30px;
+          height: 2px;
+          background-color: skyblue;
+          left: 15px;
+          top: 55px;
+        }
+      }
+
+    }
+  }
+}
+
+// 轮播图
+#slide {
+  margin-top: 80px;
+  .item {
+    .large {
+      width: 100%;
+      height: 540px;
+
+      background-position: center center;
+    }
+
+    // img {
+    //   width: 100%;
+    // }
+  }
+}
+
+// 我们的成绩
+
+#grade {
+  text-align: center;
+
+  h2 {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 60px;
+      height: 2px;
+      background-color: skyblue;
+      left: 50%;
+      margin-left: -40px;
+      top: 50px;
+    }
+  }
+
+  >p {
+    margin: 50px 0;
+  }
+
+  .container {
+    .row {
+      div {
+        strong {
+          font-size: 36px;
+          color: #0ba1e4;
+          margin-bottom: 10px;
+        }
+
+        p {}
+      }
+    }
+  }
+}
+
+// 我们的优势
+#advantage {
+  text-align: center;
+  background-color: #e1e1e1;
+
+  h2 {
+    padding-top: 20px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 60px;
+      height: 2px;
+      background-color: skyblue;
+      left: 50%;
+      margin-left: -40px;
+      top: 70px;
+    }
+  }
+
+  >p {
+    margin: 50px 0;
+  }
+
+  .container {
+    .row {
+      div {
+
+        .adtg-box {
+          &:hover {
+            background-color: #0ba1e4;
+
+            h3,
+            p,
+            span {
+              color: #fff;
+            }
+          }
+
+          background-color: #fff;
+          padding: 10px;
+          border: 1px solid #e1e1e1;
+
+          span {
+            font-size: 80px;
+            color: #0ba1e4;
+            margin-top: 20px;
+
+          }
+
+          h3 {}
+
+          p {
+            margin-left: 10px;
+            line-height: 20px;
+            text-align: left;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+// 我们的服务
+#serve {
+  text-align: center;
+  background-color: #fff;
+
+  h2 {
+    padding-top: 20px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 60px;
+      height: 2px;
+      background-color: skyblue;
+      left: 50%;
+      margin-left: -40px;
+      top: 70px;
+    }
+  }
+
+  >p {
+    margin: 50px 0;
+  }
+
+  .container {
+    .row {
+      div {
+        perspective: 800px;
+
+        .serve-box {
+          transition: all .5s;
+          border: 1px solid #ccc;
+          background-color: #fafafa;
+
+          .top {
+            border-bottom: 1px solid #ccc;
+            padding: 20px 0;
+
+            h4 {
+              color: #0ba1e4;
+            }
+
+            p {}
+          }
+
+          .bottom {
+            p {
+              margin-top: 30px;
+            }
+
+            .btn {
+              background-color: #fafafa;
+              color: #0ba1e4;
+              margin: 20px 0;
+            }
+
+          }
+
+          &:hover {
+            background-color: #0ba1e4;
+            transform: scale(1.2);
+
+            z-index: 100;
+
+            h4,
+            p,
+            .btn {
+              color: #fff;
+            }
+
+            .btn {
+              background-color: #0ba1e4;
+            }
+
+            @media(max-width: 768px) {
+              transform: scale(1);
+            }
+          }
+
+        }
+      }
+    }
+  }
+  >.btn {
+    font-size: 20px;
+    color: #0ba1e4;
+    border-color: #0ba1e4;
+    margin: 60px 0;
+    &:hover {
+      background-color: #0ba1e4;
+      color: #fff;
+    }
+  }
+}
+// 客户的鼓励
+
+
+#hearten {
+  text-align: center;
+  background-color: #fff;
+
+  h2 {
+    padding-top: 20px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 60px;
+      height: 2px;
+      background-color: skyblue;
+      left: 50%;
+      margin-left: -40px;
+      top: 70px;
+    }
+  }
+
+  >p {
+    margin: 50px 0;
+  }
+  .container {
+    .row {
+      div {
+          .hearten-box {
+            border: 1px solid #34a263;
+            position: relative;
+            text-align: left;
+            padding: 35px 20px 20px 10px;
+            img {
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+              position: absolute;
+              top: -25px;
+              left: 50%;
+              margin-left: -25px;
+            }
+            p {
+
+            }
+            &::after {
+              content: '';
+              position: absolute;
+              box-sizing: border-box;
+              width: 20px;
+              height: 20px;
+              border-right: 1px solid #34a263;
+              border-bottom: 1px solid #34a263;
+              background-color: #fff;
+              transform: rotate(45deg);
+              bottom: -11px;
+
+              right: 50%;
+              margin-right: -11px;
+
+            }
+          }
+          i {
+            display: block;
+            width: 70px;
+            height: 70px;
+            background: url(../images/icon.svg);
+            margin: 30px auto 40px;
+
+          }
+      }
+    }
+  }
+}
+// 我的客户
+#symbiosis {
+  text-align: center;
+  background-color: #e1e1e1;
+
+  h2 {
+    padding-top: 20px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 60px;
+      height: 2px;
+      background-color: skyblue;
+      left: 50%;
+      margin-left: -40px;
+      top: 70px;
+    }
+  }
+
+  >p {
+    margin: 50px 0;
+  }
+  .container {
+    .row {
+      div {
+        margin-top: 20px;
+        img {
+          // transform: scale(0.7);
+          width: 100%;
+          border: 1px solid #ccc;
+          
+          &:hover {
+            background-color: #fff;
+            transition: all 1s;
+          }
+        }
+      }
+    }
+  }
+}
